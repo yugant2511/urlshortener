@@ -27,7 +27,7 @@ public class UrlController {
 
         String shortCode = urlService.shortenUrl(request.getOriginalUrl());
 
-        String shortUrl = "http://localhost:8080/api/" + shortCode;
+        String shortUrl = "https://urlshortener-production-a498.up.railway.app/api/" + shortCode;
 
         return ResponseEntity.ok(shortUrl);
     }
